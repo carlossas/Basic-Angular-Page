@@ -1,7 +1,7 @@
 {
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
     "project": {
-        "name": "cv"
+        "name": "angular basic page"
     },
     "apps": [{
         "root": "src",
@@ -18,9 +18,15 @@
         "testTsconfig": "tsconfig.spec.json",
         "prefix": "app",
         "styles": [
-            "styles.css"
+            "styles.scss",
+            "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
+            "../node_modules/angular-bootstrap-md/scss/mdb-free.scss",
+            "../node_modules/font-awesome/scss/font-awesome.scss"
         ],
-        "scripts": [],
+        "scripts": [
+            "../node_modules/chart.js/dist/Chart.js",
+            "../node_modules/hammerjs/hammer.min.js"
+        ],
         "environmentSource": "environments/environment.ts",
         "environments": {
             "dev": "environments/environment.ts",
@@ -53,15 +59,5 @@
     "defaults": {
         "styleExt": "scss",
         "component": {}
-    },
-    "styles": [
-        "node_modules/font-awesome/scss/font-awesome.scss",
-        "node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
-        "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
-        "src/styles.scss "
-    ],
-    "scripts": [
-        "node_modules/chart.js/dist/Chart.js",
-        "node_modules/hammerjs/hammer.min.js"
-    ]
+    }
 }

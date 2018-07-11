@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from  'angular-bootstrap-md';
+
 // MODULO NECESARIO
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -26,6 +28,7 @@ import { HomeComponent } from './home/home.component';
          HomeComponent,
      ],
      imports: [
+        MDBBootstrapModule.forRoot(),
         BrowserModule,
          SharedModule,
          CommonModule,
@@ -34,7 +37,8 @@ import { HomeComponent } from './home/home.component';
          HttpModule
      ],
      providers:[
-     ]
+    ],
+    schemas: [NO_ERRORS_SCHEMA]
 })
 
 export class PagesModule { }
