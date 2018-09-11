@@ -12,17 +12,14 @@ import { SharedModule } from '../shared/shared.module';
 // RUTAS
 import { PANEL_ROUTES } from './panel.routes';
 //SERVICIOS
-import { AutService } from './servicios/aut.service';
 // COMPONENTES
 import { PanelComponent } from './panel.component';
-import { LoginComponent } from './login/login.component';
 
 
 
 @NgModule({
    declarations: [
         PanelComponent,
-        LoginComponent,
  ],
     exports: [
      ],
@@ -36,7 +33,6 @@ import { LoginComponent } from './login/login.component';
          HttpClientModule
      ],
      providers:[
-        AutService
      ]
 })
 

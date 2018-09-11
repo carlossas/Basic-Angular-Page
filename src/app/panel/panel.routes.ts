@@ -1,7 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 // COMPONENTES
 import { PanelComponent } from './panel.component';
-import { LoginComponent } from './login/login.component';
 
 
 const panelRoutes: Routes = [
@@ -9,8 +8,8 @@ const panelRoutes: Routes = [
     path: '',
     component: PanelComponent,
     children: [
-      { path: 'login', component: LoginComponent }, 
-      { path: '', redirectTo: '/login', pathMatch: 'full' }
+      // { path: 'login', component: LoginComponent }, 
+      { path: '', redirectTo: '/', pathMatch: 'full' }
     ]
   }
 ];
